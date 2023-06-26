@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st 
 import requests
 import pandas as pd
 API_URL = 'http://localhost:5000/recommendations'
@@ -28,6 +28,7 @@ if st.button("Get Recommendations"):
                         .blank {display:none}
                         </style>
                         """
+            
 
             # Inject CSS with Markdown
             st.markdown(hide_dataframe_row_index, unsafe_allow_html=True)
